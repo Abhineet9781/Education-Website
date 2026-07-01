@@ -1,8 +1,56 @@
-const courses = [
-  { id: 1, title: "Complete React Developer Bootcamp", category: "Development", thumbnail: "https://picsum.photos/seed/react101/500/300", price: 49.99, description: "Learn React from scratch and build production-ready single page applications using hooks, context and modern tooling.", instructor: "Aditya Rao" },
-  { id: 2, title: "UI/UX Design Fundamentals", category: "Design", thumbnail: "https://picsum.photos/seed/uxfund/500/300", price: 39.99, description: "A practical introduction to user research, wireframing and visual design principles for aspiring product designers.", instructor: "Neha Kapoor" },
-  { id: 3, title: "Digital Marketing Mastery", category: "Marketing", thumbnail: "https://picsum.photos/seed/dmarket/500/300", price: 34.99, description: "Master SEO, social media advertising and email campaigns to grow any brand from the ground up.", instructor: "Rohan Mehta" },
-  { id: 4, title: "Python for Beginners", category: "Development", thumbnail: "https://picsum.photos/seed/pybasic/500/300", price: 29.99, description: "Start coding with Python through hands-on projects covering syntax, data structures and automation basics.", instructor: "Sana Iyer" },
-  { id: 5, title: "Figma for Product Designers", category: "Design", thumbnail: "https://picsum.photos/seed/figmapd/500/300", price: 44.99, description: "Design polished interfaces and interactive prototypes in Figma while working through real client briefs.", instructor: "Karan Bhatt" },
-  { id: 6, title: "Social Media Growth Strategy", category: "Marketing", thumbnail: "https://picsum.photos/seed/smgrowth/500/300", price: 24.99, description: "Build a repeatable content strategy that turns followers into customers across every major platform.", instructor: "Priya Nair" }
-];
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>All Courses - Edtech</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="text-slate-800">
+
+<header class="border-b border-slate-200 bg-white sticky top-0 z-10">
+  <div class="max-w-6xl mx-auto px-5 h-[70px] flex items-center justify-between">
+    <a href="index.html" class="text-xl font-bold">Ed<span class="text-blue-600">tech</span></a>
+    <nav class="flex gap-7 text-sm font-medium text-slate-500">
+      <a href="index.html" class="hover:text-blue-600">Home</a>
+      <a href="courses.html" class="hover:text-blue-600">Courses</a>
+      <a href="index.html#testimonials" class="hover:text-blue-600">Reviews</a>
+    </nav>
+  </div>
+</header>
+
+<section class="py-14 text-center">
+  <div class="max-w-6xl mx-auto px-5">
+    <h1 class="text-3xl font-bold mb-2">All Courses</h1>
+    <p class="text-slate-500">Find the right course for you from our full catalog.</p>
+  </div>
+</section>
+
+<section class="border-b border-slate-200 py-5">
+  <div class="max-w-6xl mx-auto px-5 flex flex-wrap gap-4 items-center justify-between">
+    <input type="text" id="searchInput" placeholder="Search courses by title..."
+      class="flex-1 min-w-[240px] border border-slate-200 rounded-md px-4 py-3 text-sm focus:outline-none focus:border-blue-600">
+    <div class="flex flex-wrap gap-2" id="categoryFilters">
+      <button class="cat-btn active px-4 py-2 rounded-md text-sm font-medium border border-slate-200 text-slate-500" data-category="all">All</button>
+      <button class="cat-btn px-4 py-2 rounded-md text-sm font-medium border border-slate-200 text-slate-500" data-category="Development">Development</button>
+      <button class="cat-btn px-4 py-2 rounded-md text-sm font-medium border border-slate-200 text-slate-500" data-category="Design">Design</button>
+      <button class="cat-btn px-4 py-2 rounded-md text-sm font-medium border border-slate-200 text-slate-500" data-category="Marketing">Marketing</button>
+    </div>
+  </div>
+</section>
+
+<section class="py-16">
+  <div class="max-w-6xl mx-auto px-5">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="courseListGrid"></div>
+    <p class="hidden text-center text-slate-500 py-10" id="emptyState">No courses match your search.</p>
+  </div>
+</section>
+
+<footer class="bg-slate-900 text-white text-center text-sm py-6">
+  <p>&copy; 2026 Edtech. All rights reserved.</p>
+</footer>
+
+<script src="js/courses.js"></script>
+<script src="js/courses-page.js"></script>
+</body>
+</html>
