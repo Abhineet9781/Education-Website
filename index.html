@@ -6,49 +6,49 @@
 <title>Edtech</title>
 <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="text-slate-800">
+<body class="bg-[#f6f7fb] text-slate-800 antialiased">
 
-<header class="border-b border-slate-200 bg-white sticky top-0 z-10">
+<header class="border-b border-slate-200 bg-white/90 backdrop-blur sticky top-0 z-20 shadow-sm">
   <div class="max-w-6xl mx-auto px-5 h-[70px] flex items-center justify-between">
-    <a href="index.html" class="text-xl font-bold">Ed<span class="text-green-600">tech</span></a>
-    <nav class="flex gap-7 text-sm font-medium text-slate-500">
-      <a href="index.html" class="hover:text-blue-600">Home</a>
-      <a href="courses.html" class="hover:text-blue-600">Courses</a>
-      <a href="#testimonials" class="hover:text-blue-600">Reviews</a>
+    <a href="index.html" class="text-xl font-bold tracking-tight">Ed<span class="text-sky-600">tech</span></a>
+    <nav class="flex gap-7 text-sm font-medium text-slate-600">
+      <a href="index.html" class="hover:text-slate-900 transition">Home</a>
+      <a href="courses.html" class="hover:text-slate-900 transition">Courses</a>
+      <a href="#testimonials" class="hover:text-slate-900 transition">Reviews</a>
     </nav>
   </div>
 </header>
 
-<section class="bg-slate-50 py-24 text-center">
+<section class="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-700 py-24 text-center text-white">
   <div class="max-w-xl mx-auto px-5">
-    <h1 class="text-4xl font-bold mb-4">Learn skills that actually get you hired</h1>
-    <p class="text-slate-500 mb-8 text-lg">Practical, project based courses in development, design and marketing taught by working professionals.</p>
-    <a href="courses.html" class="inline-block bg-green-600 hover:bg-green-700 text-white font-semibold px-8 py-3 rounded-md transition">Browse Courses</a>
+    <h1 class="text-4xl md:text-5xl font-bold mb-4 tracking-tight">Learn skills that actually get you hired</h1>
+    <p class="text-slate-300 mb-8 text-lg">Practical, project based courses in development, design and marketing taught by working professionals.</p>
+    <a href="courses.html" class="inline-block bg-sky-500 hover:bg-sky-600 text-white font-semibold px-8 py-3 rounded-full shadow-sm transition">Browse Courses</a>
   </div>
 </section>
 
 <section class="py-20">
   <div class="max-w-6xl mx-auto px-5">
-    <h2 class="text-3xl font-bold text-center mb-8">Popular Courses</h2>
+    <h2 class="text-3xl font-bold text-center mb-8 text-slate-900">Popular Courses</h2>
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="popularCourses"></div>
   </div>
 </section>
 
-<section class="bg-slate-50 py-20" id="testimonials">
+<section class="bg-white py-20" id="testimonials">
   <div class="max-w-6xl mx-auto px-5">
-    <h2 class="text-3xl font-bold text-center mb-8">What our students say</h2>
+    <h2 class="text-3xl font-bold text-center mb-8 text-slate-900">What our students say</h2>
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-      <div class="bg-white border border-slate-200 rounded-xl p-6">
-        <p class="text-slate-500 italic mb-4">"The React bootcamp completely changed how I build apps. I landed a job three months after finishing."</p>
-        <span class="font-semibold">Abhineet Kumar</span>
+      <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6 shadow-sm">
+        <p class="text-slate-600 italic mb-4">"The React bootcamp completely changed how I build apps. I landed a job three months after finishing."</p>
+        <span class="font-semibold text-slate-900">Abhineet Kumar</span>
       </div>
-      <div class="bg-white border border-slate-200 rounded-xl p-6">
-        <p class="text-slate-500 italic mb-4">"Clear explanations, real projects, no filler. Exactly what I needed to switch into design."</p>
-        <span class="font-semibold">Aditi Srivastava</span>
+      <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6 shadow-sm">
+        <p class="text-slate-600 italic mb-4">"Clear explanations, real projects, no filler. Exactly what I needed to switch into design."</p>
+        <span class="font-semibold text-slate-900">Aditi Srivastava</span>
       </div>
-      <div class="bg-white border border-slate-200 rounded-xl p-6">
-        <p class="text-slate-500 italic mb-4">"Best money I've spent on my career. The marketing course paid for itself within a month."</p>
-        <span class="font-semibold">Jahnvi</span>
+      <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6 shadow-sm">
+        <p class="text-slate-600 italic mb-4">"Best money I've spent on my career. The marketing course paid for itself within a month."</p>
+        <span class="font-semibold text-slate-900">Jahnvi</span>
       </div>
     </div>
   </div>
